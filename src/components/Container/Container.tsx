@@ -1,13 +1,13 @@
 type ContainerProps = {
-    color: string,
+    color?: string,
     width: string,
-    padding: number
+    children?: React.ReactNode
 }
 
-export const Container = ({ color, width, padding }:ContainerProps) => {
+export const Container = ({ color, width, children }:ContainerProps) => {
   return (
-    <div style={{ backgroundColor: color, width: width, padding: padding}}>
-        Container
-    </div>
+    <section style={{ backgroundColor: color, width: width, padding: "10px 0 10px 0", margin: "0 auto"}}>
+        {children}
+    </section>
   )
 }

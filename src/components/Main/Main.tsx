@@ -2,10 +2,10 @@ type MainProps = {
     children: React.ReactNode
 }
 
-export const Main = (props: MainProps) => {
+export const Main = ({children}: MainProps) => {
     return (
         <main>
-            {props.children}
+            {children}
         </main>
     )
 }

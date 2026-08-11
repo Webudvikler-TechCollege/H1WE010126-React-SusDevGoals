@@ -1,5 +1,5 @@
 import './App.css'
-import { Container } from './components/Container/Container'
+import { ContentWrapper } from './components/ContentWrapper/ContentWrapper'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
@@ -9,8 +9,9 @@ function App() {
     <>
       <Header />
       <Main>
-          <Container color="#445566" width="80%" padding={20} />
-          <Container color="#667799" width="100%" padding={10} />
+        <ContentWrapper title="Alt i Bulldak Nudler" description='Se vores online udvalg af nudler' showTitle={true}>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam soluta maxime, officiis perspiciatis cum nulla quod porro atque sed distinctio saepe tenetur? Maxime dolores laboriosam aperiam quisquam inventore accusantium.
+        </ContentWrapper>
       </Main>
       <Footer />
     </>
