@@ -16,7 +16,7 @@ export const ContentWrapper = ({ title, description, showTitle, children }: Cont
     }
 
     return (
-        <ContentWrapperStyled color="green">
+        <ContentWrapperStyled color="green" width="80%">
             {showTitle && <h1>{title}</h1>}
             <p>{children}</p>
         </ContentWrapperStyled>
