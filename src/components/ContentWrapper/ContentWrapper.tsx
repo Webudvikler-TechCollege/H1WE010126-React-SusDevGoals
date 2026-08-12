@@ -1,3 +1,5 @@
+import { ContentWrapperStyled } from "./ContentWrapperStyled";
+
 type ContentWrapperProps = {
     title: string,
     description: string,
@@ -14,12 +16,9 @@ export const ContentWrapper = ({ title, description, showTitle, children }: Cont
     }
 
     return (
-        <div>
+        <ContentWrapperStyled color="green">
             {showTitle && <h1>{title}</h1>}
-            
-            <p>
-                {children}
-            </p>
-        </div>
+            <p>{children}</p>
+        </ContentWrapperStyled>
     )
 }
