@@ -1,4 +1,4 @@
-import { ContentWrapperStyled } from "./ContentWrapperStyled";
+import { ContentWrapperStyled } from "./ContentWrapper.styled";
 
 type ContentWrapperProps = {
     title: string,
