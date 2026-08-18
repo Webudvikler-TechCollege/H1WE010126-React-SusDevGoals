@@ -1,9 +1,9 @@
 export const theme = {
     colors: {
-        primary: '2BBBDE',
-        secondary: 'EDEDED',
-        tertiary: '03689C',
-        grey: 'efefef'
+        primary: '#2BBBDE',
+        secondary: '#EDEDED',
+        tertiary: '#03689C',
+        grey: '#efefef'
     },
     fonts: [
         'Oswald',

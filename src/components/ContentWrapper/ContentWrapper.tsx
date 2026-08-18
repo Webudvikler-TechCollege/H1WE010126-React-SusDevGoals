@@ -1,24 +1,21 @@
-import { ContentWrapperStyled } from "./ContentWrapper.styled";
+import { Div } from "../Atoms/Div/Div"
+import { ContentWrapperStyled } from "./ContentWrapper.styled"
+import type { ContentWrapperProps } from "./ContentWrapper.types"
 
-type ContentWrapperProps = {
-    title: string,
-    description: string,
-    showTitle: boolean,
-    children?: React.ReactNode
-}
+export const ContentWrapper = ({ pagetitle, children }: ContentWrapperProps) => {
 
-export const ContentWrapper = ({ title, description, showTitle, children }: ContentWrapperProps) => {
-    document.title = title    
+  document.title = pagetitle
 
-    if (description) {
-        const meta = document.querySelector('meta[name="description"]');
-        if (meta) meta.setAttribute("content", description);
-    }
-
-    return (
-        <ContentWrapperStyled color="green" width="80%">
-            {showTitle && <h1>{title}</h1>}
-            <p>{children}</p>
-        </ContentWrapperStyled>
-    )
+  return (
+    <ContentWrapperStyled>
+        <Div className="greybox">
+          <Div className="center">
+            <h1>{pagetitle}</h1>
+          </Div>
+        </Div>
+        <Div className="center">
+          {children}
+        </Div>
+    </ContentWrapperStyled>
+  )
 }
