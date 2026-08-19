@@ -1,21 +1,29 @@
-import { createGlobalStyle } from "styled-components";
-import { Reset } from "./Mixins";
+import { createGlobalStyle } from 'styled-components'
+import { Reset } from './Mixins'
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        padding: 0px;
-        margin: 0px;
-        ${Reset}
+        ${Reset};
+        font-family: 'Open Sans', Arial, Verdana;
+        font-size: ${props => props.theme.fontsizes.m};
+    }
+
+    .dark-mode {
+        background-color: #333;
     }
 
     h1 {
+        display: flex;
+        height: 80px;
+        align-items: center;
         font-family: ${props => props.theme.fonts[0]};
-        font-weight: 600;
+        font-size: ${props => props.theme.fontsizes.xl};
         text-transform: uppercase;
-        font-size: ${({theme}) => theme.fontsizes["xl"]}
+        margin-top: 0;
     }
 
-    img {
-        width: 100%;
+    h2 {
+        font-family: ${props => props.theme.fonts[1]};
+        font-size: ${props => props.theme.fontsizes.l};
     }
 `

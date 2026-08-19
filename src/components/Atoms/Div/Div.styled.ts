@@ -1,21 +1,21 @@
 import styled from 'styled-components'
-import type { DivStyledProps } from './Div.types'
+import type { DivProps } from './Div.types'
 
-export const DivStyled = styled.div<DivStyledProps>`
-    background-color: ${({ theme, $bgcolor }) => 
-        $bgcolor ? theme.colors[$bgcolor] : "transparent"
-    };
-    width: ${props => props.$width || '100%'};
-    height: ${props => props.$height || 'auto'};
+export const DivStyled = styled.div<DivProps>`
     margin: auto auto;
+    padding: 0.6rem 0%;
 
-    &.greybox {
+    &.bluebar {
+        background-color: ${props => props.theme.colors.primary};
+        width: 100%;
+        height: 0.8rem;
+    }    
+
+    &.greybar {
         background-color: ${props => props.theme.colors.grey};
-        padding: 0.6rem 0%;
     }    
 
     &.center {
-        width: 1200px;
+        max-width: 1200px;
     }
-
 `

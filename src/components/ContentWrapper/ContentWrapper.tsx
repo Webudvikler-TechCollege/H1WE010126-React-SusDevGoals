@@ -8,7 +8,7 @@ export const ContentWrapper = ({ pagetitle, children }: ContentWrapperProps) => 
 
   return (
     <ContentWrapperStyled>
-        <Div className="greybox">
+        <Div className="greybar">
           <Div className="center">
             <h1>{pagetitle}</h1>
           </Div>

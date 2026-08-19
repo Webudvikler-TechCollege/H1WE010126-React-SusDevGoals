@@ -7,7 +7,7 @@ import { Image } from "../Atoms/Image/Image"
 export const Header = () => {
     return (
         <>
-            <Div bgcolor="primary" height="30px" width="100%"></Div>
+            <Div className="bluebar"></Div>
             <HeaderStyled>
                 <Image src={Logo} alt="SDG" />
                 <Navbar />
