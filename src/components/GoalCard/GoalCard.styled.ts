@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Reset } from '../../styles/Mixins'
 
 export const GoalCardStyled = styled.li`
     background-color: #${props => props.color};
@@ -10,16 +11,21 @@ export const GoalCardStyled = styled.li`
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    text-decoration: none;
 
     div:first-child {
         grid-area: 1 / 1 / 2 / 2;
         font-family: ${props => props.theme.fonts[0]};
+        font-size: 3rem;
+        align-items: start;
     }
 
     div:nth-child(2) {
         grid-area: 1 / 2 / 2 / 7;
         font-family: ${props => props.theme.fonts[0]};
         text-transform: uppercase;
+        font-size: 1.2rem;
+        align-items: start;
     }
 
     div:nth-child(3) {
