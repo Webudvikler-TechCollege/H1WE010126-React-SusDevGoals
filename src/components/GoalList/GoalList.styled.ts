@@ -12,11 +12,7 @@ export const GoalListStyled = styled.div`
     }
 
     ul {
-        ${ResetList};
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-gap: 0.5rem;
-        padding-bottom: 2rem;
+
     }
 
     img {
