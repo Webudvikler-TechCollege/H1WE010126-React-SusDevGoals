@@ -1,8 +1,9 @@
-import { Div } from "../Atoms/Div/Div"
+
 import { Navbar } from "../Navbar/Navbar"
 import { HeaderStyled } from "./Header.styled"
-import Logo from '../../assets/images/logo-sdg.svg'
-import { Image } from "../Atoms/Image/Image"
+import Logo from '../../../assets/images/logo-sdg.svg'
+import { Div } from "../Div/Div"
+import { Image } from "../Image/Image"
 
 export const Header = () => {
     return (

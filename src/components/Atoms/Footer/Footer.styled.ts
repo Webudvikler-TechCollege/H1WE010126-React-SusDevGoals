@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Worldmap from '../../assets/images/worldmap.png'
+import Worldmap from '../../../assets/images/worldmap.png'
 
 export const FooterStyled = styled.footer`
     background-color: #${props => props.theme.colors.tertiary};

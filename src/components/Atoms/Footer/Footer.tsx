@@ -1,9 +1,10 @@
 import { FooterStyled } from "./Footer.styled"
-import UndpLogo from '../../assets/images/logo-undp.svg'
-import MS from '../../assets/images/logo-ms-verdensklasse.svg'
-import GlobalGym from '../../assets/images/logo-globale-gymnasier.svg'
-import Danida from '../../assets/images/logo-danida.svg'
-import { Div } from "../Atoms/Div/Div"
+import UndpLogo from '../../../assets/images/logo-undp.svg'
+import MS from '../../../assets/images/logo-ms-verdensklasse.svg'
+import GlobalGym from '../../../assets/images/logo-globale-gymnasier.svg'
+import Danida from '../../../assets/images/logo-danida.svg'
+import { Div } from "../Div/Div"
+
 
 export const Footer = () => {
 

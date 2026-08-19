@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ResetList } from '../../styles/Mixins'
+import { ResetList } from '../../../styles/Mixins'
 
 export const NavBarStyled = styled.nav`
     ul {
