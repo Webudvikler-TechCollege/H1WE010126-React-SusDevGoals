@@ -1,17 +1,12 @@
-import type { ReactEventHandler } from "react"
+import { InputStyled } from "./Input.styled"
+import type { InputProps } from "./Input.types"
 
-type InputProps = {
-    type: string,
-    name: string,
-    onChangeEvent?: ReactEventHandler
-}
-
-export const Input = ({ type, name, onChangeEvent }: InputProps) => {
+export const Input = ({ type, name, onChange }: InputProps) => {
   return (
-    <input 
+    <InputStyled 
       type={type}
       name={name}
-      onChange={onChangeEvent}
+      onChange={onChange}
     />
   )
 }

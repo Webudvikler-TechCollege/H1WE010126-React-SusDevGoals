@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
-import { HomePage } from '../../pages/HomePage/HomePage'
-import { FaqPage } from '../../pages/FaqPage/FaqPage'
-import { ErrorPage } from '../../pages/ErrorPage/ErrorPage'
-import { GoalDetailPage } from '../../pages/GoalDetailsPage/GoalDetailPage'
-import { EducationPage } from '../../pages/EducationPage/EducationPage'
-import { CustomGoalPage } from '../../pages/CustomGoalPage/CustomGoalPage'
-import { ContactPage } from '../../pages/ContactPage/ContactPage'
-import { LoginPage } from '../../pages/LoginPage/LoginPage'
+import { HomePage } from '../pages/HomePage/HomePage'
+import { GoalDetailPage } from '../pages/GoalDetailsPage/GoalDetailPage'
+import { EducationPage } from '../pages/EducationPage/EducationPage'
+import { CustomGoalPage } from '../pages/CustomGoalPage/CustomGoalPage'
+import { FaqPage } from '../pages/FaqPage/FaqPage'
+import { ContactPage } from '../pages/ContactPage/ContactPage'
+import { LoginPage } from '../pages/LoginPage/LoginPage'
+import { ErrorPage } from '../pages/ErrorPage/ErrorPage'
 
 export const AppRouter = () => {
     return (

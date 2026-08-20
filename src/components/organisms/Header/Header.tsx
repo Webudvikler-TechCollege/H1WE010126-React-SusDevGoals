@@ -1,16 +1,16 @@
-
 import { Navbar } from "../Navbar/Navbar"
 import { HeaderStyled } from "./Header.styled"
 import Logo from '../../../assets/images/logo-sdg.svg'
-import { Div } from "../Div/Div"
-import { Image } from "../Image/Image"
+import { Container } from "../../atoms/Container/Container"
+import { Image } from "../../atoms/Image/Image"
+import { Link } from "react-router-dom"
 
 export const Header = () => {
     return (
         <>
-            <Div className="bluebar"></Div>
+            <Container className="bluebar" />
             <HeaderStyled>
-                <Image src={Logo} alt="SDG" />
+                <Link to="/"><Image src={Logo} alt="SDG" /></Link>
                 <Navbar />
             </HeaderStyled>
         </>

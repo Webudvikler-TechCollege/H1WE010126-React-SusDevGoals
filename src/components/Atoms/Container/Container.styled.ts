@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import type { DivProps } from './Div.types'
+import type { ContainerProps } from './Container.types'
 
-export const DivStyled = styled.div<DivProps>`
+export const ContainerStyled = styled.div<ContainerProps>`
     margin: auto auto;
     padding: 0.6rem 0%;
 

@@ -1,4 +1,4 @@
-import { Div } from "../Atoms/Div/Div"
+import { Container } from "../../components/atoms/Container/Container"
 import { ContentWrapperStyled } from "./ContentWrapper.styled"
 import type { ContentWrapperProps } from "./ContentWrapper.types"
 
@@ -8,14 +8,14 @@ export const ContentWrapper = ({ pagetitle, children }: ContentWrapperProps) => 
 
   return (
     <ContentWrapperStyled>
-        <Div className="greybar">
-          <Div className="center">
+        <Container className="greybar">
+          <Container className="center">
             <h1>{pagetitle}</h1>
-          </Div>
-        </Div>
-        <Div className="center">
+          </Container>
+        </Container>
+        <Container className="center">
           {children}
-        </Div>
+        </Container>
     </ContentWrapperStyled>
   )
 }

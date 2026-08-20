@@ -1,12 +1,10 @@
-type LabelProps = {
-    htmlFor: string,
-    title: string
-}
+import { LabelStyled } from "./Label.styled"
+import type { LabelProps } from "./Label.types"
 
 export const Label = ({ htmlFor, title }: LabelProps) => {
   return (
-    <label htmlFor={htmlFor}>
+    <LabelStyled htmlFor={htmlFor}>
         {title}
-    </label>
+    </LabelStyled>
   )
 }

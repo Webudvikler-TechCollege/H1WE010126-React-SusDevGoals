@@ -18,7 +18,7 @@ export const NavBarStyled = styled.nav`
                 margin-left: 2.0rem;
 
                 &:hover, &.active {
-                    color: #${props => props.theme.colors.primary};
+                    color: ${props => props.theme.colors.primary};
                 }
             }
         }

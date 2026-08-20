@@ -1,5 +1,5 @@
-import { ContentWrapper } from "../../components/ContentWrapper/ContentWrapper"
-import { GoalList } from "../../components/GoalList/GoalList"
+import { GoalList } from "../../components/organisms/GoalList/GoalList"
+import { ContentWrapper } from "../../layouts/ContentWrapper/ContentWrapper"
 
 export const HomePage = () => {
   return (

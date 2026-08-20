@@ -1,7 +1,7 @@
-import { AppRouter } from './components/AppRouter/AppRouter'
-import { Footer } from './components/Atoms/Footer/Footer'
-import { Header } from './components/Atoms/Header/Header'
-import { Main } from './components/Atoms/Main/Main'
+import { Main } from "./components/atoms/Main/Main"
+import { Footer } from "./components/organisms/Footer/Footer"
+import { Header } from "./components/organisms/Header/Header"
+import { AppRouter } from "./router/AppRouter"
 
 function App() {
   return (

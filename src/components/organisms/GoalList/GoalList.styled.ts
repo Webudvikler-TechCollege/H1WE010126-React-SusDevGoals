@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { ResetList } from '../../styles/Mixins'
 
 export const GoalListStyled = styled.div`
     text-align: center;

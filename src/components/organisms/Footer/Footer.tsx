@@ -3,14 +3,13 @@ import UndpLogo from '../../../assets/images/logo-undp.svg'
 import MS from '../../../assets/images/logo-ms-verdensklasse.svg'
 import GlobalGym from '../../../assets/images/logo-globale-gymnasier.svg'
 import Danida from '../../../assets/images/logo-danida.svg'
-import { Div } from "../Div/Div"
-
+import { Container } from "../../atoms/Container/Container"
 
 export const Footer = () => {
 
   return (
     <FooterStyled>
-      <Div className="center">
+      <Container className="center">
         <div>
           <h4>Om hjemmesiden</h4>
           <p>Dette digitale læringssite er udviklet af UNDP's nordiske kontor i Danmark, Globale Gymnasier og Mellemfolkeligt Samvirke/VerdensKlasse med støtte fra Danidas Oplysningsbevilling. </p>
@@ -25,7 +24,7 @@ export const Footer = () => {
           <h4>Udviklet med støtte fra Danidas oplysningsbevilling</h4>
           <img alt="Danida" src={Danida} />
         </div>
-      </Div>
+      </Container>
     </FooterStyled>
   )
 }

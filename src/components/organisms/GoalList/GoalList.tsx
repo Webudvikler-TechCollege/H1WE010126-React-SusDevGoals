@@ -1,18 +1,18 @@
-import { goals } from "../../data/sdg"
 import { GoalListStyled } from "./GoalList.styled"
-import Divider from '../../assets/images/divider.svg'
+import Divider from '../../../assets/images/divider.svg'
 import { Link } from "react-router-dom"
-import { Div } from "../Atoms/Div/Div"
-import { GoalCard } from "../GoalCard/GoalCard"
 import { GoalGridStyled } from "./GoalGrid.styled"
+import { Container } from "../../atoms/Container/Container"
+import { goals } from "../../../data/sdg"
+import { GoalCard } from "../../molecules/GoalCard/GoalCard"
 
 export const GoalList = () => {
   return (
     <GoalListStyled>
-      <Div className="greybox">
+      <Container className="greybox">
         <h1>FN's verdensmål for bæredygtig udvikling</h1>
         <img src={Divider} />
-        <Div  className="center">
+        <Container className="center">
           <GoalGridStyled>
             {goals.map((value, index) => {
               return (
@@ -22,8 +22,8 @@ export const GoalList = () => {
               )
             })}
           </GoalGridStyled>
-        </Div>
-      </Div>
+        </Container>
+      </Container>
     </GoalListStyled>
   )
 }

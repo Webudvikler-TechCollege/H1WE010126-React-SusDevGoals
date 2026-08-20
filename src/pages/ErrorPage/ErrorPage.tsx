@@ -1,4 +1,4 @@
-import { ContentWrapper } from "../../components/ContentWrapper/ContentWrapper"
+import { ContentWrapper } from "../../layouts/ContentWrapper/ContentWrapper"
 
 export const ErrorPage = () => {
     return (

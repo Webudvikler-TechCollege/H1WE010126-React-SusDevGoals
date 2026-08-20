@@ -1,6 +1,5 @@
-
-import { Input } from "../Atoms/Input/Input.tsx"
-import { Label } from "../Atoms/Label/Label.tsx"
+import { Input } from "../../atoms/Input/Input.tsx"
+import { Label } from "../../atoms/Label/Label.tsx"
 import { ContactFormStyled } from "./ContactForm.styled.ts"
 
 export const ContactForm = () => {
